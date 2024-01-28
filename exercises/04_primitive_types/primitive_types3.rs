@@ -5,10 +5,10 @@
 // Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
-
 fn main() {
-    let a = ???
+    let a: String = ["123456789_"; 10].iter().fold(String::new(), |a, b| a + b);
+    let a = ["some value"; 100];
+    let a = (0..100).collect::<Vec<_>>();
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
